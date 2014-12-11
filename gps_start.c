@@ -3,15 +3,7 @@
 #include <time.h>
 #include <string.h>
 #include <stdlib.h>
-
-/* simple function to pause */
-/* adapted from cplusplus.com */
-int wait (float seconds) {
-  clock_t endwait;
-  endwait = clock () + seconds * CLOCKS_PER_SEC ;
-  while (clock() < endwait) {};
-  return(0);
-}
+#include "gps_wait.h"
 
 /*********************************************************/
 /*                                                       */
