@@ -23,6 +23,7 @@ int main() {
   char gpsString[105];
 
   /* initialise connection to GPS receiver */
+  /* note filename is hardcoded - not great */
   gpsHandle = fopen("gpsdata.txt","r");
 
   /* abort here if the file didn't open */
