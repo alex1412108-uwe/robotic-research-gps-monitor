@@ -1,0 +1,5 @@
+all: gps_start.c gps_wait.o
+	gcc -o gps_start gps_start.c gps_wait.o
+
+gps_wait.o: gps_wait.c gps_wait.h
+	gcc -c gps_wait.c
